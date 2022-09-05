@@ -19,3 +19,7 @@ func (vr *VideoRepository) PostVideo(video *model.Video) {
 func (vr *VideoRepository) GetVideos() []model.Video {
 	return vr.Obj
 }
+
+func (vr *VideoRepository) GetVideoById(videoID int) *model.Video {
+	return &vr.Obj[videoID]
+}

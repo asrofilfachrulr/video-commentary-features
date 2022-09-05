@@ -4,5 +4,5 @@ import "time"
 
 type Comment struct {
 	time.Time
-	Content string
+	Content string `json:"content" binding:"required"`
 }
